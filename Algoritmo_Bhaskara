@@ -1,0 +1,53 @@
+Algoritmo "bhaskara"
+
+Var
+     A, B, C, Xu, Xd: real
+
+
+Inicio
+    escreva("Declare o valor de A: ")
+
+      leia(A)
+
+    escreval("Declare o valor de B: ")
+
+      leia(B)
+
+    escreval("Declare o valor de C: ")
+
+      leia(C)
+ //////////////////////////////////////////////////
+               //Variaveis
+    se (A = 0) entao
+      escreva("Conta invalida!")
+     fimse
+
+     se (C = 0) entao
+      escreval("Valor de X¹ é: 0")
+      Xd <- (-B)/A
+        escreval("Valor de X² é:", Xd, ".")
+     fimse
+
+     se (B = 0) entao
+      Xu <- + raizq((-c)/a)
+      Xd <- - raizq((-c)/a)
+      escreval("Valor de X¹ é:", Xu, ".")
+      escreval("Valor de X² é:", Xd, ".")
+      fimse
+
+ //////////////////////////////////////////////////
+              //Conta Normal
+   se (A>=1) entao
+    Xu <- (B - raizq((B - 4*A*C)))/2*A
+    Xd <- (B + raizq((B - 4*A*C)))/2*A
+    escreval("O valor de X¹ é:", Xu, ".")
+    escreval("O valor de x² é:", Xd, ".")
+   fimse
+
+        
+
+Fimalgoritmo
+
+
+  //Refazer o código, pois, pode-se retornar valores >= 0, tornando
+  //a conta "impossível" de fazer, retornando o invalid point.
